@@ -19,17 +19,44 @@
     </head>
 
     <body>
-        <div class="container-fluid body-container">
+        <div class="wrapper d-flex flex-column vh-100 body-container">
 
             <header>
-                <div class="container-fluid header-container">
-                    <div class="row">
-                        <div class="col-12">
-                            
+                <nav class="fixed-top bg-white d-flex">
+                    <div class="container-fluid d-flex align-items-center gap-4">
+
+                        <!--Logo Div Container-->
+                        <div class="logos-container flex-grow-0">
+                            <!--Logo Desktop-->
+                            <img src="img/logo.svg" alt="logo" class="logo img-fluid d-none d-lg-block">
+                            <!--Logo Mobile--> 
+                            <img src="img/mobile-logo.png" alt="logo-mobile" class="logo-mobile img-fluid d-lg-none">
                         </div>
+                            
+                        <!--Search Bar Container-->
+                        <div class="flex-grow-1 rounded-3 ms-4">
+                            <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </div>
+
+                        <div class="flex-grow-0 d-flex justify-content-center align-items-center gap-3 d-none d-lg-flex">
+                            <i class="orange-hover fs-5 fa-solid fa-list font-grey"></i>
+                            <i class="orange-hover fs-5 fa-solid fa-circle-question font-grey"></i>
+                            <i class="orange-hover fs-5 fa-solid fa-ellipsis-vertical font-grey"></i>
+                            <i class="orange-hover fs-5 fa-solid fa-bell font-orange"></i>
+                        </div>
+
+                        <div class="flex-grow-0 dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item orange-hover" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item orange-hover" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item orange-hover" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+
                     </div>
-                </div>
-            </header>
+                </nav>
+            </header>            
+            
     
             <aside>
                 <div class="container-fluid aside-container">
