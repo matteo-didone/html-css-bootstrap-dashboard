@@ -1,7 +1,18 @@
 /* Resetting Default Styles*/
+
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Yolk', sans-serif, 'FontAwesome';
+}
+
 ul 
 {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +20,7 @@ ul
 a 
 {
     text-decoration: none;
-    color: #000;
+    color: inherit;
 }
 
 .hidden
@@ -24,11 +35,6 @@ a
     src: url(font/Yolk-Regular.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
-}
-
-* 
-{
-    font-family: 'Yolk', sans-serif;
 }
 
 /* Utilities */
