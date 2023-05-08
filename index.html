@@ -19,48 +19,225 @@
     </head>
 
     <body>
-        <div class="wrapper d-flex flex-column vh-100 body-container">
+        <div class="body-container">
 
             <header>
-                <nav class="fixed-top bg-white d-flex">
-                    <div class="container-fluid d-flex align-items-center gap-4">
 
-                        <!--Logo Div Container-->
-                        <div class="logos-container flex-grow-0">
-                            <!--Logo Desktop-->
-                            <img src="img/logo.svg" alt="logo" class="logo img-fluid d-none d-lg-block">
-                            <!--Logo Mobile--> 
-                            <img src="img/mobile-logo.png" alt="logo-mobile" class="logo-mobile img-fluid d-lg-none">
-                        </div>
-                            
-                        <!--Search Bar Container-->
-                        <div class="flex-grow-1 rounded-3 ms-4">
-                            <input class="form-control me-2" type="search" placeholder="&#x1F50D; Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                        </div>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Boolean Logo">
+                    <img src="img/mobile-logo.png" alt="Boolean Logo Mobile" class="hidden">
+                </div>
 
-                        <div class="flex-grow-0 d-flex justify-content-center align-items-center gap-3 d-none d-lg-flex">
-                            <i class="orange-hover fs-5 fa-solid fa-list font-grey"></i>
-                            <i class="orange-hover fs-5 fa-solid fa-circle-question font-grey"></i>
-                            <i class="orange-hover fs-5 fa-solid fa-ellipsis-vertical font-grey"></i>
-                            <i class="orange-hover fs-5 fa-solid fa-bell font-orange"></i>
-                        </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-search"></i>
+                </div>
 
-                        <div class="flex-grow-0 dropdown">
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item orange-hover" href="#">Profilo</a></li>
-                                <li><a class="dropdown-item orange-hover" href="#">Fatturazione</a></li>
-                                <li><a class="dropdown-item orange-hover" href="#">Logout</a></li>
-                            </ul>
-                        </div>
+                <div class="header-buttons">
+                    <button class="btn font-grey"><i class="fa-solid fa-list"></i></button>
+                    <button class="btn font-grey"><i class="fa-solid fa-circle-question"></i></button>
+                    <button class="btn font-grey"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button class="btn font-orange"><i class="fa-solid fa-bell"></i></button>
+                </div>
 
-                    </div>
-                </nav>
             </header>   
             
             <main>
-                
+
+                <div class="left-container container-fluid text-white">
+                    <aside>
+                        <section class="aside-top">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                                <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Stats</a></li>
+                                <li><a href="#"><i class="fa-solid fa-signal"></i> Signals</a></li>
+                            </ul>
+                        </section>
+
+                        <section class="aside-bottom">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i> Admin</a></li>
+                            </ul>
+                        </section>
+                    </aside>
+                </div>
+
+                <div class="right-container container-fluid">
+                    <section class="main-content">
+
+                        <section class="header-main-content">
+                            <div class="left-header-main-content">
+                                <div class="top-left-header-main-content">
+                                    <h1>Boolean</h1>
+                                    <span>Piano blaze</span>
+                                </div>
+
+                                <div class="bottom-left-header-main-content">
+                                    <span>3 app</span>
+                                    <span><i class="fa-solid fa-angles-right"></i></span>
+                                    <span>Boolean mobile app</span>
+                                    <span>Boolean blog app</span>
+                                </div>
+                            </div>
+
+                            <div class="middle-header-main-content">
+                                <div class="top-middle-header-main-content">
+                                    <h4>Studenti online negli ultimi 30 minuti</h4>
+                                </div>
+
+                                <div class="bottom-middle-header-main-content">
+                                    <h1>125</h1>
+                                </div>
+                            </div>
+
+                            <div class="right-header-main-content">
+                                <h3>Nuovo Studente</h3>
+                                <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </section>
+    
+                        <section class="body-main-content">
+    
+                            <div class="left-body-main-content">
+                                <div class="next-classes">
+
+                                    <div class="card-title">
+                                        <h1>Prossime classi</h1>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <span>Nome</span>
+                                            <span>Data inizio</span>
+                                            <span>ROI</span>
+                                            <span>Stato</span>
+                                            <span>Azioni</span>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 75</span>
+                                            <span>15 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Done</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 76</span>
+                                            <span>16 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Done</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 77</span>
+                                            <span>17 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Process</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 78</span>
+                                            <span>18 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Done</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 79</span>
+                                            <span>19 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Failed</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 80</span>
+                                            <span>20 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Done</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 81</span>
+                                            <span>21 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Failed</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                        <div class="row">
+                                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                                            <span>Classe 82</span>
+                                            <span>22 Feb 2021</span>
+                                            <span>20%</span>
+                                            <button class="btn">Done</button>
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="faq">
+
+                                    <div class="card-title">
+                                        <h1>F.A.Q.</h1>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <span class="how-to">Come aggiungere un nuovo studente?</span>
+                                        <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+
+                                        <hr>
+
+                                        <span class="how-to">Come posso accedere alle informazioni del mio account?</span>
+                                        <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+
+                                        <hr>
+
+                                        <span class="how-to">Posso usare questa dashboard da mobile?</span> 
+                                        <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+    
+                            <div class="right-body-main-content">
+                                <div class="to-do"></div>
+                                <div class="active-users"></div>
+                            </div>
+    
+                        </section>
+
+                    </section>
+                </div>
+
             </main>
-            
+
+        </div>    
     </body>
 
 </html>

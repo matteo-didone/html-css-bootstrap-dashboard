@@ -12,6 +12,11 @@ a
     color: #000;
 }
 
+.hidden
+{
+    display: none;
+}
+
 /* Font */
 @font-face 
 {
@@ -57,7 +62,7 @@ nav
 
 input[type='search']::placeholder 
 {
-    font-family: system-ui, FontAwesome, sans-serif;
+    font-family: 'Yolk', sans-serif;
 }
 
 .orange-hover:hover
@@ -80,3 +85,7 @@ aside
 }
 
 /* Main */
+.header-main-content
+{
+    background-color: rgba(26,114,233,255);
+}
