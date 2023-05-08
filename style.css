@@ -49,6 +49,10 @@ a
 }
 
 /* Body */
+body
+{
+    height: calc(100vh - 70px);
+}
 
 /* Header */
 header
