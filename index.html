@@ -18,28 +18,29 @@
     </head>
 
     <body>
-        <div class="body-container">
 
-            <header>
-
+        <header>
+            <div class="header-container container-fluid">
                 <div class="logo">
                     <img src="img/logo.svg" alt="Boolean Logo">
                     <img src="img/mobile-logo.png" alt="Boolean Logo Mobile" class="hidden">
                 </div>
-
+    
                 <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                    <i class="fa-solid fa-search"></i>
-                </div>
+                    <input type="search" placeholder="&#128269;    Prova a cercare: Lezioni di Laravel">
 
+                </div>
+    
                 <div class="header-buttons">
-                    <button class="btn font-grey"><i class="fa-solid fa-list"></i></button>
-                    <button class="btn font-grey"><i class="fa-solid fa-circle-question"></i></button>
-                    <button class="btn font-grey"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-                    <button class="btn font-orange"><i class="fa-solid fa-bell"></i></button>
+                    <button class="btn font-grey orange-hover"><i class="fa-solid fa-list"></i></button>
+                    <button class="btn font-grey orange-hover"><i class="fa-solid fa-circle-question"></i></button>
+                    <button class="btn font-grey orange-hover"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button class="btn font-orange orange-hover"><i class="fa-solid fa-bell"></i></button>
                 </div>
+            </div>
+        </header>   
 
-            </header>   
+        <div class="body-container">
             
             <main>
 
@@ -53,11 +54,26 @@
                             </ul>
                         </section>
 
+                        <section class="aside-top-mobile hidden">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-signal"></i></a></li>
+                            </ul>
+                        </section>
+
                         <section class="aside-bottom">
                             <ul>
                                 <li><a href="#"><i class="fa-solid fa-gear"></i> Admin</a></li>
                             </ul>
                         </section>
+
+                        <section class="aside-bottom-mobile hidden">
+                            <ul>
+                                <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+                            </ul>
+                        </section>
+
                     </aside>
                 </div>
 
