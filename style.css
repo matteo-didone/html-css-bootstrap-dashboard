@@ -13,7 +13,18 @@ a
 }
 
 /* Font */
+@font-face 
+{
+    font-family: 'Yolk';
+    src: url(font/Yolk-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+* 
+{
+    font-family: 'Yolk', sans-serif;
+}
 
 /* Utilities */
 .font-grey
@@ -63,5 +74,9 @@ input[type='search']::placeholder
 }
 
 /* Aside */
+aside
+{
+    background-color: rgba(13,37,58,255);
+}
 
 /* Main */
